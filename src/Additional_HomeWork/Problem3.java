@@ -7,9 +7,9 @@ public class Problem3 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hãy nhập bán kính của hình tròn");
         float radius = scanner.nextFloat();
-        final float Pi = (float) 3.14;
-        float perimeter = 2*radius*Pi;
-        float area = radius*radius*Pi;
+        final float PI = (float) 3.14;
+        float perimeter = 2*radius*PI;
+        float area = radius*radius*PI;
         System.out.printf("Hình tròn có chu vi là %f và có diện tích là %f",perimeter,area);
     }
 }
