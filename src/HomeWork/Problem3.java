@@ -15,17 +15,23 @@ public class Problem3 {
 
                 }
 
-                return true;
+
 
             }
+            return true;
         }
         return false;
 
     }
 
     public static void main(String[] args) {
-        boolean isPrime = checkPrimeNumber(6);
+        boolean isPrime = checkPrimeNumber(9);
         System.out.println("Co phai so nguyen to hay khong ?"+ isPrime);
+        for(int i=0;i<20;i++){
+            if(checkPrimeNumber(i)){
+                System.out.println("Đây là số nguyên tố "+i);
+            }
+        }
 
     }
 }
