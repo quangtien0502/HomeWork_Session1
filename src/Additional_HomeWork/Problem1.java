@@ -5,13 +5,16 @@ import java.util.Scanner;
 public class Problem1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sum = 0;
-        for(int i=1;i<=10;i++){
-            if(i%2==0){
-                System.out.println(i);
-                sum=sum+i;
-            }
+        System.out.println("Chieu dai cua mang la");
+
+        int[] myArray = new int[5];
+        for(int i=0;i<5;i++){
+            System.out.printf("Giá trị của phần tử thứ %d là ",i+1);
+            myArray[i]=scanner.nextInt();
         }
-        System.out.println("Sum "+sum);
+        for (int number:myArray
+             ) {
+            System.out.println(number);
+        }
     }
 }

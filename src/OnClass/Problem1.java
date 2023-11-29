@@ -5,12 +5,8 @@ public class Problem1 {
 
 
     public static void main(String[] args) {
-        int sum=0;
-        for(int i=5;i<100;i++){
-            if(i%5==0 & i%3==0){
-                sum = sum+i;
-            }
-        }
-        System.out.println("Sum "+sum);
+        int[] numbers = new int[5];
+        float[] arrayFloat={3.1F,5.8F,9.2F};
+        System.out.println("Gia tri phan tu co chi so 1 trong arrFloat la: "+arrayFloat[1]);
     }
 }

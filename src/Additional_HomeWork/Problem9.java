@@ -2,26 +2,32 @@ package Additional_HomeWork;
 
 import java.util.Scanner;
 
-public class Problem8 {
+public class Problem9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("The array length is ");
         int arrLength = scanner.nextInt();
-        int updateValue, updateIndex;
+        int deletedIndex;
         int[] myArr = new int[arrLength];
+        int [] myNewArr= new int[arrLength-1];
         for (int i = 0; i < arrLength; i++) {
             System.out.printf("Elements value at position %d is", i);
             myArr[i] = scanner.nextInt();
         }
-        System.out.println("Please enter the Number that you need to update");
-        updateValue = scanner.nextInt();
-        System.out.println("Please enter the index that number is updated");
+
+        System.out.println("Please enter the index that number is need to delete");
         do {
-            updateIndex = scanner.nextInt();
-        } while (updateIndex >= arrLength);
-        myArr[updateIndex] = updateValue;
-        for (int value : myArr
+            deletedIndex = scanner.nextInt();
+        } while (deletedIndex >= arrLength);
+        for (int i=0;i<arrLength-1;i++){
+            if(i<deletedIndex){
+                myNewArr[i]=myArr[i];
+            }else {
+                myNewArr[i]=myArr[i+1];
+            }
+        }
+        for (int value : myNewArr
         ) {
             System.out.println(value);
         }
